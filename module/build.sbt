@@ -1,6 +1,6 @@
 name := """play-https-redirect"""
 
-version := "1.0.0"
+version := "1.0.1"
 
 lazy val module = (project in file(".")).enablePlugins(PlayScala)
 
