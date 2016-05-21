@@ -3,14 +3,13 @@ package com.github.enalmada.filters
 import javax.inject.Inject
 
 import akka.stream.Materializer
-import play.api.Logger
 import play.api.mvc.{Filter, RequestHeader, Result, Results}
 
 import scala.concurrent.{ExecutionContext, Future}
 
 class HttpsRedirectFilter @Inject()(implicit val mat: Materializer, ec: ExecutionContext, env: play.api.Environment, config: play.api.Configuration) extends Filter {
 
-  def isEnabled = !config.getBoolean("httpsRedirect.enabled").getOrElse(false)
+  def isEnabled = config.getBoolean("httpsRedirect.enabled").getOrElse(false)
 
   // request.secure doesn't seem to factor in x-forwarded-proto on AWS so doing this
   def isRequestSecure(request: RequestHeader) = request.secure || request.headers.get("X-Forwarded-Proto").map(_.toLowerCase).contains("https")

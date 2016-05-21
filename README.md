@@ -3,7 +3,7 @@
 Playframework filter to redirect http to https.  I found myself needing the same code over and over in multiple projects so I decided to keep it DRY.
 
 #### Version information
-* `2.5.0` to `2.5.x` (last: `1.0.1` - [master branch](https://github.com/enalmada/play-https-redirect/tree/master))
+* `2.5.0` to `2.5.x` (last: `1.0.2` - [master branch](https://github.com/enalmada/play-https-redirect/tree/master))
 
 Releases are on [mvnrepository](http://mvnrepository.com/artifact/com.github.enalmada) and snapshots can be found on [sonatype](https://oss.sonatype.org/content/repositories/snapshots/com/github/enalmada).
 
@@ -33,19 +33,19 @@ httpsRedirect {
 <dependency>
     <groupId>com.github.enalmada</groupId>
     <artifactId>play-https-redirect_2.11</artifactId>
-    <version>1.0.1</version>
+    <version>1.0.2</version>
 </dependency>
 ```
 or
 
 ```scala
 val appDependencies = Seq(
-  "com.github.enalmada" %% "play-https-redirect" % "1.0.1"
+  "com.github.enalmada" %% "play-https-redirect" % "1.0.2"
 )
 ```
 
 ## Versions
-* 1.0.1 Initial release
+* 1.0.2 Initial release
 
 
 ## TODO
