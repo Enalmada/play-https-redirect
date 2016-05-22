@@ -1,5 +1,7 @@
 # play-https-redirect [![Build Status](https://travis-ci.org/Enalmada/play-https-redirect.svg?branch=master)](https://travis-ci.org/Enalmada/play-https-redirect) [![Join the chat at https://gitter.im/Enalmada/play-https-redirect](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/Enalmada/play-https-redirect?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge) [![Maven Central](https://maven-badges.herokuapp.com/maven-central/com.github.enalmada/play-https-redirect/badge.svg)](https://maven-badges.herokuapp.com/maven-central/com.github.enalmada/play-https-redirect)
 
+[![Join the chat at https://gitter.im/Enalmada/play-https-redirect](https://badges.gitter.im/Enalmada/play-https-redirect.svg)](https://gitter.im/Enalmada/play-https-redirect?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
+
 Playframework filter to redirect http to https.  I found myself needing the same code over and over in multiple projects so I decided to keep it DRY.
 
 #### Version information
